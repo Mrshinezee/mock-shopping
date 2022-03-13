@@ -1,0 +1,30 @@
+.App {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  .product-header{
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 2rem;
+    padding: 10 0px;
+  }
+  .new-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 300px));
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-gap: 2rem;
+    place-content: center;
+  }
+  .footer{
+    background-color: #0c6dfc;
+    color: #fff;
+    height: 60px;
+    display: grid;
+    place-items: center;
+  }
+}
+

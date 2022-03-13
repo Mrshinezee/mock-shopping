@@ -1,0 +1,49 @@
+@import '../../mixins.scss';
+
+
+.hero-unit{
+  background-color: #0c6dfc;
+  height: 260px;
+  display: grid;
+    place-items: center;
+  
+  &-section{
+    width: 100%;
+    display: flexbox;
+    justify-content: flex-start;
+    align-items: center;
+    &-left{
+      margin-left: 10%;
+      &-header{
+        color: #e1fafa;
+        font-weight: 300;
+        font-size: 1.8rem;
+        padding: 3px;
+      }
+      &-text{
+        margin-bottom: 5px;
+        margin-top: 5px;
+        color: #e1fafa;
+        font-size: 16px;
+      }
+      &-action{
+        margin-bottom: 5px;
+        margin-top: 1opx;
+        .discover-btn {
+          color: #fff;
+          background-color: #fba74a;
+          margin: 5px;
+          cursor: pointer;
+          @include button-size(10px, 13px, 1rem, 7px);
+        }
+        .learn-btn{
+          color: #0c6dfc;
+          background-color: #fff;
+          margin: 5px;
+          cursor: pointer;
+          @include button-size(10px, 13px, 1rem, 7px);
+        }
+      }
+    }
+  }
+}

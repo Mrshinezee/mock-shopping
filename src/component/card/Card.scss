@@ -1,0 +1,49 @@
+@import '../../mixins.scss';
+
+.card {
+  // width: clamp(23ch, 50%, 46ch);
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: 1px solid #9f9fa7;
+  border-radius: 5px;
+  .visual-image{
+    border-bottom: 1px solid #e0e0e0;
+    height: 242px;
+    width: 285px;
+    margin: 10px;
+    img{
+      width:90%;
+      height:80%;
+      // object-fit: cover;
+      // object-position: center;
+     }
+  }
+  .product_info{
+    padding: 10px;
+    &_productName{
+      font-size: .8rem;
+      color: #999;
+      font-weight: 600;
+    }
+    &_productPrice{
+      font-size: .8rem;
+      font-weight: bold;
+    }
+    &_productAction{
+      .add-btn{
+        background-color: #0c6dfc;
+        color: #fff;
+        margin: 5px;
+        @include button-size(10px, 13px, 1rem, 7px);
+      }
+      .like-btn{
+        // color: #0c6dfc;
+        background-color: #e2f0fa;
+        margin: 5px;
+        @include button-size(10px, 13px, 1rem, 7px);
+      }
+    }
+  }
+}

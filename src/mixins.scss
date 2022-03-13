@@ -1,0 +1,12 @@
+$filpkart_blue: rgb(40, 116, 240);
+$background: rgb(240, 242, 245);
+$white: rgb(255,255,255);
+$green: rgb(62, 145, 65);
+
+@mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
+  border-radius: $border-radius;
+  cursor: pointer;
+  border: none;
+}
